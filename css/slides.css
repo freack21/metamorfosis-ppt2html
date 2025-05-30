@@ -1,0 +1,501 @@
+#img11 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 15%;
+    background-image: url("../img/Picture11.png");
+    background-size: contain;
+}
+
+#img21 {
+    position: absolute;
+    bottom: -15%;
+    left: 1%;
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-image: url("../img/Picture21.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 1vw;
+    padding-top: 3vh;
+    font-size: min(2rem, 2.5vw);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#img22,
+.check-order,
+.check-quest {
+    position: absolute;
+    bottom: -16%;
+    right: 1%;
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-image: url("../img/Picture22.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 1vw;
+    padding-top: 3vh;
+    font-size: min(2rem, 2.5vw);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#img14,
+#img62,
+#img32,
+#img57,
+#img23 {
+    position: absolute;
+    bottom: 7%;
+    left: -2%;
+    scale: 2;
+}
+
+#img9 {
+    position: absolute;
+    top: 20%;
+    right: -5%;
+    width: 20%;
+}
+
+#img29 {
+    position: absolute;
+    top: 8%;
+    right: 20%;
+    width: 7%;
+}
+
+#img34 {
+    position: absolute;
+    top: 1%;
+    right: 15%;
+    width: 10%;
+}
+
+#img33 {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 15%;
+}
+
+#img33_ {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 15%;
+}
+
+#img61 {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 10%;
+}
+/*  */
+
+#home #img3 {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 12%;
+}
+
+#home #img12 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64%;
+}
+
+#home #img13 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#home #img13:hover {
+    width: 30%;
+}
+
+#home #img10 {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+}
+
+#home #img5 {
+    position: absolute;
+    bottom: 7%;
+    right: 0%;
+    width: 16%;
+}
+
+#home #img1 {
+    position: absolute;
+    bottom: 7%;
+    left: 0%;
+    width: 16%;
+}
+
+#home #img2 {
+    position: absolute;
+    bottom: 40%;
+    left: 12%;
+    width: 7%;
+}
+
+#home #img8 {
+    position: absolute;
+    bottom: 7%;
+    left: 15%;
+    width: 10%;
+}
+
+#home #img7 {
+    position: absolute;
+    bottom: 7%;
+    left: 28%;
+    width: 5%;
+}
+
+#home #img6 {
+    position: absolute;
+    bottom: 7%;
+    right: 18%;
+    width: 5%;
+}
+
+/*  */
+
+#menu {
+    background-color: #9e3b25;
+}
+
+#menu h2 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#menu #img1 {
+    position: absolute;
+    bottom: 7%;
+    left: 0%;
+    width: 12%;
+}
+
+#menu #img2 {
+    position: absolute;
+    top: -5%;
+    left: 60%;
+    width: 7%;
+}
+
+/*  */
+
+#keluar {
+    background-color: #774225;
+}
+
+#keluar #img24 {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#keluar #img25 {
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    width: 7%;
+}
+
+#keluar #img2 {
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    width: 7%;
+    transform: scaleX(-1);
+}
+
+#keluar p {
+    z-index: 999;
+    margin-top: -5vh;
+    font-weight: bold;
+}
+
+/*  */
+#selesai {
+    background-color: #fe6c30;
+}
+
+#selesai p {
+    font-weight: 800;
+    font-size: min(3.5rem, 3.5vw);
+    margin-top: -15%;
+}
+
+#selesai #img26 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%);
+}
+
+#selesai #img30 {
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    width: 7%;
+}
+
+#selesai #img4 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 7%;
+}
+
+#selesai #img8 {
+    position: absolute;
+    bottom: 7%;
+    left: 15%;
+    width: 10%;
+}
+
+#selesai #img1 {
+    position: absolute;
+    bottom: 8%;
+    left: 28%;
+    width: 7%;
+}
+
+#selesai #img1_ {
+    position: absolute;
+    bottom: 8%;
+    right: 20%;
+    width: 7%;
+    transform: scaleX(-1);
+}
+
+#selesai #img27 {
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+    width: 10%;
+}
+
+/*  */
+#petunjuk1 {
+    background-color: #e7ed98;
+}
+
+#petunjuk1 p.sub {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 2vw;
+    transform: translateX(-50%);
+}
+
+#petunjuk1 #img13 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 15%;
+}
+
+#petunjuk1 .hints #img21 {
+    position: static;
+    width: 10vw;
+    font-size: 1.5vw;
+    padding-top: 1.5vh;
+    padding-right: 0.6vw;
+}
+
+#petunjuk1 .hints #img22 {
+    position: static;
+    width: 10vw;
+    font-size: 1.5vw;
+    padding-top: 1.5vh;
+    padding-right: 0.6vw;
+}
+
+/*  */
+#petunjuk2 {
+    background-color: #e48d7a;
+}
+
+#petunjuk2 p.sub {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 2vw;
+    transform: translateX(-50%);
+}
+
+#petunjuk2 #img13 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 15%;
+}
+
+#petunjuk2 .hints #img21 {
+    position: static;
+    width: 10vw;
+    font-size: 1.5vw;
+    padding-top: 1.5vh;
+    padding-right: 0.6vw;
+}
+
+#petunjuk2 .hints #img22 {
+    position: static;
+    width: 10vw;
+    font-size: 1.5vw;
+    padding-top: 1.5vh;
+    padding-right: 0.6vw;
+}
+
+/*  */
+#tujuan {
+    background-color: #7ed957;
+}
+
+#tujuan #img1 {
+    position: absolute;
+    bottom: 0%;
+    right: -5%;
+    width: 20%;
+}
+
+/*  */
+#petakonsep {
+    background-color: #febf00;
+}
+
+#petakonsep #img6 {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 8%;
+}
+
+/*  */
+#sempurna {
+    background-color: #8eba3f;
+}
+
+/*  */
+#contohsempurna {
+    background-color: #da7155;
+}
+
+/*  */
+#tahapansempurna {
+    background-color: #fffbc8;
+}
+
+/*  */
+#tidaksempurna {
+    background-color: #fffbc8;
+}
+
+/*  */
+#contohtidaksempurna {
+    background-color: #fffbc8;
+}
+
+/*  */
+#tahapantidaksempurna {
+    background-color: #e7ed98;
+}
+
+/*  */
+#paham {
+    background-color: #fffbc8;
+}
+
+#paham #img25 {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    width: 8%;
+}
+
+/*  */
+#simulasi {
+    background-color: #e48d7a;
+}
+
+#simulasi #img55 {
+    position: absolute;
+    bottom: 0%;
+    left: 32%;
+    width: 15%;
+}
+
+#simulasi #img56 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 32%;
+    transform: translateY(-50%);
+}
+
+#simulasi #img2 {
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    width: 5%;
+}
+
+#simulasi p {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 32%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 4vw;
+    color: white;
+}
+
+/*  */
+#game2 {
+    background-color: #fffbc8;
+}
+
+/*  */
+#kuis2 {
+    background-color: #e48d7a;
+}
+
+/*  */
+#akhir #img25 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 8%;
+}
+
+#akhir .prompt img {
+    width: 75vw;
+}
+
+#akhir .prompt p {
+    top: 40%;
+}
