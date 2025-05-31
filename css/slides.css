@@ -48,7 +48,7 @@
 #img57,
 #img23 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     left: -2%;
     scale: 2;
 }
@@ -135,14 +135,14 @@
 
 #home #img5 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     right: 0%;
     width: 16%;
 }
 
 #home #img1 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     left: 0%;
     width: 16%;
 }
@@ -156,21 +156,21 @@
 
 #home #img8 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     left: 15%;
     width: 10%;
 }
 
 #home #img7 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     left: 28%;
     width: 5%;
 }
 
 #home #img6 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     right: 18%;
     width: 5%;
 }
@@ -190,7 +190,7 @@
 
 #menu #img1 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     left: 0%;
     width: 12%;
 }
@@ -271,7 +271,7 @@
 
 #selesai #img8 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     left: 15%;
     width: 10%;
 }
@@ -293,7 +293,7 @@
 
 #selesai #img27 {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     right: 10%;
     width: 10%;
 }
