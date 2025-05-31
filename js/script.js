@@ -40,7 +40,7 @@ const NAVS = [
     },
     {
         selector: "#menu .menu .menu-item:nth-child(6)",
-        dest: "#kuis1",
+        dest: "#kuis",
     },
     {
         selector: "#keluar #img21",
@@ -155,6 +155,18 @@ const NAVS = [
         dest: "#game1",
     },
     {
+        selector: "#kuis #img22",
+        dest: "#kuis1",
+    },
+    {
+        selector: "#kuis #to-kuis1",
+        dest: "#kuis1",
+    },
+    {
+        selector: "#kuis #to-kuis2",
+        dest: "#kuis2",
+    },
+    {
         selector: "#akhir #img21",
         dest: "#petakonsep",
     },
@@ -188,42 +200,91 @@ NAVS.forEach((nav) => {
 function setDragNDrop(id, correctOrder, btnId, dest) {
     const container = document.querySelector(id);
     let dragSrc = null;
+    let draggedItem = null;
+    let isMobile = "ontouchstart" in window;
 
-    container.addEventListener("dragstart", function (e) {
-        if (e.target.tagName === "IMG") {
-            dragSrc = e.target;
-            e.dataTransfer.setData("text/plain", e.target.title);
-            e.target.classList.add("dragging");
-        }
-    });
+    function swapElements(el1, el2) {
+        const parent1 = el1.parentNode;
+        const parent2 = el2.parentNode;
+        const next1 = el1.nextSibling;
+        const next2 = el2.nextSibling;
 
-    container.addEventListener("dragend", function (e) {
-        if (e.target.tagName === "IMG") {
-            e.target.classList.remove("dragging");
-        }
-    });
+        parent1.insertBefore(el2, next1);
+        parent2.insertBefore(el1, next2);
+    }
 
-    container.addEventListener("dragover", function (e) {
-        if (e.target.tagName === "IMG") {
+    function getElementFromTouchPosition(touchX, touchY) {
+        const elements = document.elementsFromPoint(touchX, touchY);
+        return elements.find((el) => el.tagName === "IMG" && el !== draggedItem);
+    }
+
+    if (!isMobile) {
+        container.addEventListener("dragstart", function (e) {
+            if (e.target.tagName === "IMG") {
+                dragSrc = e.target;
+                e.dataTransfer.setData("text/plain", e.target.title);
+                e.target.classList.add("dragging");
+            }
+        });
+
+        container.addEventListener("dragend", function (e) {
+            if (e.target.tagName === "IMG") {
+                e.target.classList.remove("dragging");
+            }
+        });
+
+        container.addEventListener("dragover", function (e) {
+            if (e.target.tagName === "IMG") {
+                e.preventDefault();
+            }
+        });
+
+        container.addEventListener("drop", function (e) {
+            if (e.target.tagName !== "IMG" || !dragSrc || dragSrc === e.target) return;
             e.preventDefault();
-        }
-    });
+            swapElements(dragSrc, e.target);
+        });
+    } else {
+        container.addEventListener(
+            "touchstart",
+            function (e) {
+                if (e.target.tagName === "IMG") {
+                    draggedItem = e.target;
+                    touchStartX = e.touches[0].clientX;
+                    touchStartY = e.touches[0].clientY;
+                    draggedItem.classList.add("dragging");
+                    draggedItem.style.transition = "none";
+                    e.preventDefault();
+                }
+            },
+            { passive: false }
+        );
 
-    container.addEventListener("drop", function (e) {
-        if (e.target.tagName !== "IMG" || !dragSrc || dragSrc === e.target) {
-            return;
-        }
+        container.addEventListener(
+            "touchmove",
+            function (e) {
+                if (draggedItem) {
+                    e.preventDefault();
+                }
+            },
+            { passive: false }
+        );
 
-        e.preventDefault();
+        container.addEventListener("touchend", function (e) {
+            if (draggedItem) {
+                const touchX = e.changedTouches[0].clientX;
+                const touchY = e.changedTouches[0].clientY;
+                const targetElement = getElementFromTouchPosition(touchX, touchY);
 
-        const dragSrcParent = dragSrc.parentNode;
-        const targetParent = e.target.parentNode;
-        const dragSrcNext = dragSrc.nextSibling;
-        const targetNext = e.target.nextSibling;
+                if (targetElement) {
+                    swapElements(draggedItem, targetElement);
+                }
 
-        dragSrcParent.insertBefore(e.target, dragSrcNext);
-        targetParent.insertBefore(dragSrc, targetNext);
-    });
+                draggedItem.classList.remove("dragging");
+                draggedItem = null;
+            }
+        });
+    }
 
     const checkBtn = document.querySelector(btnId || "#check-order");
     checkBtn.addEventListener("click", () => {
@@ -257,7 +318,7 @@ function arraysEqual(a, b) {
 }
 
 setDragNDrop("#drag-game1", ["Telur", "Larva", "Kepompong", "Kupu-Kupu"], "#check-game1", "#game2");
-setDragNDrop("#drag-game2", ["Telur", "Kecoa Kecil", "Kecoa Dewasa"], "#check-game2", "#kuis1");
+setDragNDrop("#drag-game2", ["Telur", "Kecoa Kecil", "Kecoa Dewasa"], "#check-game2", "#kuis");
 
 function setKuis(id, correctAns, dest) {
     const container = document.querySelector(id);

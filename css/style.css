@@ -382,11 +382,18 @@ h2.abs {
     justify-content: center;
     gap: 1vw;
     z-index: 999;
+    position: relative;
 }
 
 .dragndrop img {
     width: 15vw;
     cursor: grab;
+    transition: transform 0.2s ease;
+}
+
+.dragging {
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .jawaban {

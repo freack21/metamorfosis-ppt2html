@@ -499,3 +499,80 @@
 #akhir .prompt p {
     top: 40%;
 }
+
+/*  */
+#kuis {
+    background-color: #2d5016;
+}
+
+#kuis #img64 {
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36%;
+}
+
+#kuis p.abs {
+    position: absolute;
+    top: 1.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+#kuis #img39 {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 12%;
+}
+
+#kuis #img2 {
+    position: absolute;
+    top: -2%;
+    left: 60%;
+    width: 8%;
+}
+
+#kuis #img2_ {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 8%;
+}
+
+#kuis #img63 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36%;
+    transform: translate(-50%, -50%);
+}
+
+#kuis #to-kuis1 {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 20%;
+    cursor: pointer;
+}
+
+#kuis #to-kuis2 {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    width: 20%;
+    cursor: pointer;
+}
+
+#kuis #to-kuis1 p,
+#kuis #to-kuis2 p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2.5vw;
+}
